@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000; 
+}
+
+
+.rocket-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh; 
+}
+
+
+.rocket-body {
+  width: 120px;  
+  height: 400px; 
+  background-color: #1e90ff; 
+  border-radius: 8px; 
+  box-shadow: 0 0 15px rgba(30, 144, 255, 0.8); 
+}
