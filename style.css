@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.rocket-body {
+  position: absolute;
+  width: 130px;
+  height: 420px;
+  background-color: #1e90ff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(30, 144, 255, 0.8);
+  cursor: grab;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.rocket-top {
+  width: 0;
+  height: 0;
+  border-left: 65px solid transparent;
+  border-right: 65px solid transparent;
+  border-bottom: 80px solid #1e90ff;
+  position: absolute;
+  top: -80px;
+  left: 0;
+}
+
+.window {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border: 3px solid #0f5caa;
+  border-radius: 50%;
+  margin: 100px auto 0;
+  box-shadow: 0 0 5px #0f5caa;
+}
+
+.rocket-fin {
+  width: 40px;
+  height: 80px;
+  background-color: #1e90ff;
+  position: absolute;
+  bottom: 20px;
+}
+
+.left-fin {
+  left: -35px;
+  transform: rotate(20deg);
+  border-radius: 5px;
+}
+
+.right-fin {
+  right: -35px;
+  transform: rotate(-20deg);
+  border-radius: 5px;
+}
+
+.rocket-flame {
+  width: 30px;
+  height: 80px;
+  background: linear-gradient(to bottom, orange, red);
+  position: absolute;
+  bottom: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50% 50% 20% 20%;
+  animation: flame 0.3s infinite alternate;
+}
+
+@keyframes flame {
+  from {
+    height: 70px;
+    opacity: 1;
+  }
+  to {
+    height: 90px;
+    opacity: 0.7;
+  }
+}
